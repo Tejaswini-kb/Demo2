@@ -1286,11 +1286,12 @@ var d = document.getElementById("block-ti-lsg-mr-ads-mobile-320x320");
 
 console.log(d);
     if(elementInViewport(d)) {
-       d.classList.add('zoomoutad');
+       d.classList.add('zoomad');
+      d.classList.remove('zoomoutad');
+      
+    } else {
+      d.classList.add('zoomoutad');
      d.classList.remove('zoomad');
      
-    } else {
-         d.classList.add('zoomad');
-      d.classList.remove('zoomoutad');
     }
  };
